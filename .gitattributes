@@ -1,0 +1,5 @@
+* text=auto eol=lf
+/models/** -text
+/data/** -text
+*.pt binary
+*.png binary
