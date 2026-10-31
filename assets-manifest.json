@@ -1,0 +1,21 @@
+{
+  "data/artifacts/benchmark_dosen_analisis_error.csv": "7e5b4815e145e7626341c793fd47c1f4a02932daa77cc6bc831186a0f32188ca",
+  "data/artifacts/benchmark_dosen_attention_contoh_tambahan.png": "17c6116e0aa370e0e8ef521920bb43bae30815104345382bf685e28e69f703c1",
+  "data/artifacts/benchmark_dosen_attention_panjang.png": "8ea1e90b051f76e672d73bc9438b0d25ace0ffd613c207e72aa57bd4a3693428",
+  "data/artifacts/benchmark_dosen_attention_pendek.png": "bec3e3b8d1cb080775d9658b5a08326eb8dbfda9687c43522bde22e023e59471",
+  "data/artifacts/benchmark_dosen_bleu.csv": "677cbd35e6a259bb17bda0347b115b2cad0e79bd2e47012827046fe74531e7d8",
+  "data/artifacts/benchmark_dosen_error_by_position.csv": "4e7104def539f2e5b2b8f8b4419aeba9365867198fe7bab5f30c380c87799f52",
+  "data/artifacts/benchmark_dosen_jumlah_kalimat_per_panjang.csv": "50220fb2b0bd6660681564d0b1ed6cadb64d2ef4cac59d359a62effdd7b8a3ff",
+  "data/artifacts/benchmark_dosen_review_kualitatif.csv": "8bd82d9edd47718dcdde33d89cd5382c7a438d3bc8f9da5a7cc3ca45bb046fef",
+  "data/artifacts/benchmark_dosen_semua_prediksi.csv": "0812759e253653f59144392c3fadf51a3c8d65c131a16733c2196ea14cb60743",
+  "data/artifacts/benchmark_dosen_summary.csv": "813336820a45fdbbc7627750cb50d8b1f25026c12fba8b2163b423d14e40eaf4",
+  "data/benchmark.json": "cde441d82ffd9759f4aa3f093b41f2f2a74007641a7bb074deda5ea4651649e5",
+  "data/predictions.json": "4aced979e7ece1530becd7800a90da5a626e407c85db58df6f027bf2500ba6c0",
+  "data/provenance.json": "e294e2880c40f57a34d7e3520ab649c1d7f52070955b3e8dcd0dfba3f7cfd0c2",
+  "models/attention/config.json": "3013845c358c0727848ea554952e48d790501ee22ee9a6c4ab47f51a5079bd1b",
+  "models/attention/model.pt": "127de5095f1b7c07db4fb73962e172165f0263c9cf99d2a1a88eb21079dc9df4",
+  "models/attention/vocab.json": "e5a2f215164583e6613740889786b820608f8d948ce4226e77e4bf908dc639c9",
+  "models/no_attention/config.json": "7ca0e80e3d6fec65af791435186e4e5eb8e6d2ec66a3f946ffa5b4ee2f98195b",
+  "models/no_attention/model.pt": "8df1c1a206636488b7892a51ce7c2f37eb4290443c31fb9251b1f8ab6ea2ef4e",
+  "models/no_attention/vocab.json": "e5a2f215164583e6613740889786b820608f8d948ce4226e77e4bf908dc639c9"
+}

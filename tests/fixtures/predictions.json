@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "source": "beban kasus harus ringan .",
+    "reference": "case loads must be light .",
+    "translations": {
+      "no_attention": "we have to to . .",
+      "attention": "the to be to ."
+    },
+    "source_length": 5,
+    "length_group": "short",
+    "exact_matches": {
+      "no_attention": false,
+      "attention": false
+    },
+    "review": null
+  },
+  {
+    "id": 1,
+    "source": "lebih dingin ketimbang alasan menyedihkan untuk pancuran .",
+    "reference": "colder than that ridiculous excuse for a shower .",
+    "translations": {
+      "no_attention": "the the to to the the . . .",
+      "attention": "more more cold to to ."
+    },
+    "source_length": 8,
+    "length_group": "short",
+    "exact_matches": {
+      "no_attention": false,
+      "attention": false
+    },
+    "review": null
+  },
+  {
+    "id": 2,
+    "source": "kau lihat ?",
+    "reference": "you see ?",
+    "translations": {
+      "no_attention": "you you ? ?",
+      "attention": "you look ?"
+    },
+    "source_length": 3,
+    "length_group": "short",
+    "exact_matches": {
+      "no_attention": false,
+      "attention": false
+    },
+    "review": null
+  },
+  {
+    "id": 20,
+    "source": "orang-orang mati sekarat untuk keluar dari sini .",
+    "reference": "people have been dying to get out of here .",
+    "translations": {
+      "no_attention": "the the , of the . .",
+      "attention": "these people die to get out of out of . ."
+    },
+    "source_length": 8,
+    "length_group": "short",
+    "exact_matches": {
+      "no_attention": false,
+      "attention": false
+    },
+    "review": null
+  },
+  {
+    "id": 100,
+    "source": "vasquez dan brandon mengalahkan kita .",
+    "reference": "vasquez and brandon outlasted us .",
+    "translations": {
+      "no_attention": "and we have to . .",
+      "attention": "and and then our betrayed ."
+    },
+    "source_length": 6,
+    "length_group": "short",
+    "exact_matches": {
+      "no_attention": false,
+      "attention": false
+    },
+    "review": null
+  }
+]

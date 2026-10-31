@@ -1,0 +1,4 @@
+bucket,jumlah_test,rata_rata_kata_sumber
+pendek (<=12),1774,6.273393461104848
+sedang (13-24),193,16.487046632124354
+panjang (>=25),32,30.96875

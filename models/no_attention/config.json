@@ -1,0 +1,31 @@
+{
+  "format_version": 1,
+  "source_language": "id",
+  "target_language": "en",
+  "architecture": "GRU Seq2Seq",
+  "attention": null,
+  "embedding_dim": 64,
+  "hidden_dim": 128,
+  "attention_dim": 64,
+  "source_vocab_size": 14245,
+  "target_vocab_size": 12653,
+  "decoding": "greedy",
+  "max_length": 60,
+  "preprocessing": {
+    "lowercase": true,
+    "separate_punctuation": ".,!?",
+    "normalize_whitespace": true,
+    "tokenization": "word"
+  },
+  "selected_epoch": 3,
+  "validation_loss": 5.4419326171875,
+  "training": {
+    "batch": 16,
+    "eval_batch": 16,
+    "epochs": 10,
+    "amp": true,
+    "device": "cuda"
+  },
+  "source_checkpoint_sha256": "77aee066f0d071a0df16abc61f16cf291e90c74e97da35f3f25dd065b0a77c13",
+  "training_csv_sha256": "f4105f432781ebc3c0ebcdbfa71cf7c2478969de4cc03ccc5757328fb0c597c7"
+}

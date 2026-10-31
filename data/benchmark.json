@@ -1,0 +1,311 @@
+{
+  "models": [
+    {
+      "id": "no_attention",
+      "label": "Tanpa attention",
+      "parameters": 3610093,
+      "train_pairs": 15986,
+      "validation_pairs": 1998,
+      "test_pairs": 1999,
+      "epochs": 10,
+      "batch": 16,
+      "eval_batch": 16,
+      "training_device": "cuda",
+      "amp": true,
+      "training_seconds": 427.42,
+      "bleu": {
+        "BLEU-1": 0.28028389709192436,
+        "BLEU-2": 0.11195895721901203,
+        "BLEU-3": 0.054723707108298256,
+        "BLEU-4": 0.024825604592590585
+      },
+      "bleu_by_length": {
+        "short": 0.02796991606069002,
+        "medium": 0.018725392905998398,
+        "long": 0.0
+      },
+      "selected_epoch": 3,
+      "validation_loss": 5.4419326171875,
+      "source_vocab_size": 14245,
+      "target_vocab_size": 12653
+    },
+    {
+      "id": "attention",
+      "label": "Bahdanau attention",
+      "parameters": 7781997,
+      "train_pairs": 15986,
+      "validation_pairs": 1998,
+      "test_pairs": 1999,
+      "epochs": 10,
+      "batch": 16,
+      "eval_batch": 16,
+      "training_device": "cuda",
+      "amp": true,
+      "training_seconds": 802.51,
+      "bleu": {
+        "BLEU-1": 0.33580167135652417,
+        "BLEU-2": 0.18349308414909643,
+        "BLEU-3": 0.10871229697078405,
+        "BLEU-4": 0.06413257388022287
+      },
+      "bleu_by_length": {
+        "short": 0.07605435875998166,
+        "medium": 0.041965450785980275,
+        "long": 0.017601093953734662
+      },
+      "selected_epoch": 2,
+      "validation_loss": 5.01703662109375,
+      "source_vocab_size": 14245,
+      "target_vocab_size": 12653
+    }
+  ],
+  "history": {
+    "no_attention": [
+      {
+        "epoch": 1,
+        "train_loss": 5.6387,
+        "validation_loss": 5.56
+      },
+      {
+        "epoch": 2,
+        "train_loss": 4.9384,
+        "validation_loss": 5.4579
+      },
+      {
+        "epoch": 3,
+        "train_loss": 4.5852,
+        "validation_loss": 5.4419
+      },
+      {
+        "epoch": 4,
+        "train_loss": 4.2837,
+        "validation_loss": 5.492
+      },
+      {
+        "epoch": 5,
+        "train_loss": 4.0019,
+        "validation_loss": 5.5827
+      },
+      {
+        "epoch": 6,
+        "train_loss": 3.7548,
+        "validation_loss": 5.6672
+      },
+      {
+        "epoch": 7,
+        "train_loss": 3.5117,
+        "validation_loss": 5.7482
+      },
+      {
+        "epoch": 8,
+        "train_loss": 3.304,
+        "validation_loss": 5.874
+      },
+      {
+        "epoch": 9,
+        "train_loss": 3.1124,
+        "validation_loss": 5.9528
+      },
+      {
+        "epoch": 10,
+        "train_loss": 2.9468,
+        "validation_loss": 6.0744
+      }
+    ],
+    "attention": [
+      {
+        "epoch": 1,
+        "train_loss": 5.198,
+        "validation_loss": 5.1117
+      },
+      {
+        "epoch": 2,
+        "train_loss": 4.0183,
+        "validation_loss": 5.017
+      },
+      {
+        "epoch": 3,
+        "train_loss": 3.104,
+        "validation_loss": 5.1625
+      },
+      {
+        "epoch": 4,
+        "train_loss": 2.5683,
+        "validation_loss": 5.3993
+      },
+      {
+        "epoch": 5,
+        "train_loss": 2.3568,
+        "validation_loss": 5.5718
+      },
+      {
+        "epoch": 6,
+        "train_loss": 2.1535,
+        "validation_loss": 5.7456
+      },
+      {
+        "epoch": 7,
+        "train_loss": 1.9454,
+        "validation_loss": 5.8714
+      },
+      {
+        "epoch": 8,
+        "train_loss": 1.7848,
+        "validation_loss": 6.03
+      },
+      {
+        "epoch": 9,
+        "train_loss": 1.6453,
+        "validation_loss": 6.2202
+      },
+      {
+        "epoch": 10,
+        "train_loss": 1.5304,
+        "validation_loss": 6.4218
+      }
+    ]
+  },
+  "length_groups": [
+    {
+      "id": "short",
+      "label": "pendek (<=12)",
+      "count": 1774,
+      "mean_source_words": 6.273393461104848
+    },
+    {
+      "id": "medium",
+      "label": "sedang (13-24)",
+      "count": 193,
+      "mean_source_words": 16.487046632124354
+    },
+    {
+      "id": "long",
+      "label": "panjang (>=25)",
+      "count": 32,
+      "mean_source_words": 30.96875
+    }
+  ],
+  "errors": [
+    {
+      "type": "substitusi kata",
+      "no_attention": 9849,
+      "attention": 8694
+    },
+    {
+      "type": "kata berlebih",
+      "no_attention": 2074,
+      "attention": 899
+    },
+    {
+      "type": "kata hilang",
+      "no_attention": 2714,
+      "attention": 2758
+    }
+  ],
+  "position_errors": [
+    {
+      "position": "0-20%",
+      "no_attention": 68.35863377609108,
+      "attention": 60.24667931688805
+    },
+    {
+      "position": "20-40%",
+      "no_attention": 79.71847170353347,
+      "attention": 71.76098822177535
+    },
+    {
+      "position": "40-60%",
+      "no_attention": 84.48122967780077,
+      "attention": 76.027194797517
+    },
+    {
+      "position": "60-80%",
+      "no_attention": 81.47084171215168,
+      "attention": 75.3231829933927
+    },
+    {
+      "position": "80-100%",
+      "no_attention": 46.031143182681355,
+      "attention": 46.33497911127991
+    }
+  ],
+  "attention_images": [
+    {
+      "key": "attention_short",
+      "title": "Kalimat pendek",
+      "file": "benchmark_dosen_attention_pendek.png",
+      "artifact_key": "attention_pendek"
+    },
+    {
+      "key": "attention_long",
+      "title": "Kalimat panjang",
+      "file": "benchmark_dosen_attention_panjang.png",
+      "artifact_key": "attention_panjang"
+    },
+    {
+      "key": "attention_example",
+      "title": "Contoh tambahan",
+      "file": "benchmark_dosen_attention_contoh_tambahan.png",
+      "artifact_key": "attention_contoh_tambahan"
+    }
+  ],
+  "artifacts": {
+    "analisis_error": {
+      "filename": "benchmark_dosen_analisis_error.csv",
+      "content_type": "text/csv"
+    },
+    "attention_contoh_tambahan": {
+      "filename": "benchmark_dosen_attention_contoh_tambahan.png",
+      "content_type": "image/png"
+    },
+    "attention_panjang": {
+      "filename": "benchmark_dosen_attention_panjang.png",
+      "content_type": "image/png"
+    },
+    "attention_pendek": {
+      "filename": "benchmark_dosen_attention_pendek.png",
+      "content_type": "image/png"
+    },
+    "bleu": {
+      "filename": "benchmark_dosen_bleu.csv",
+      "content_type": "text/csv"
+    },
+    "error_by_position": {
+      "filename": "benchmark_dosen_error_by_position.csv",
+      "content_type": "text/csv"
+    },
+    "jumlah_kalimat_per_panjang": {
+      "filename": "benchmark_dosen_jumlah_kalimat_per_panjang.csv",
+      "content_type": "text/csv"
+    },
+    "review_kualitatif": {
+      "filename": "benchmark_dosen_review_kualitatif.csv",
+      "content_type": "text/csv"
+    },
+    "semua_prediksi": {
+      "filename": "benchmark_dosen_semua_prediksi.csv",
+      "content_type": "text/csv"
+    },
+    "summary": {
+      "filename": "benchmark_dosen_summary.csv",
+      "content_type": "text/csv"
+    }
+  },
+  "method": {
+    "dataset": "OPUS-100 en-id",
+    "split": "80/10/10 internal",
+    "seed": 42,
+    "bleu_smoothing": false,
+    "bleu_scale": "0?1",
+    "decoding": "greedy",
+    "max_generated_tokens": 60,
+    "embedding_dim": 64,
+    "hidden_dim": 128,
+    "attention_dim": 64,
+    "learning_rate": 0.002,
+    "teacher_forcing": 0.5,
+    "gradient_clip": 1.0
+  },
+  "test_count": 1999,
+  "qualitative_count": 18
+}
