@@ -22,5 +22,5 @@ Standalone React/TypeScript/Vite + FastAPI/PyTorch CPU application. Both exporte
 - Task 3 complete: non-root CPU Dockerfile, Compose, environment and local/VPS/HTTPS documentation. docker compose config --quiet passed.
 - Ruling: Docker Engine smoke deferred because startup exhausted Windows commit memory and crashed a CLI process; stopped only the Docker Desktop instance started for this test. No container build/run claim. Image must be smoke-tested on a host with available Docker Engine.
 - Regression fixed: clear previous translations when source/reference/examples change, preventing stale output being associated with new input; watched test fail then pass.
-- Final whole-project independent review pending.
+- Final independent review complete: checksum portability blocker addressed and verified; no other concrete blocker reported. Container smoke remains the documented environment-dependent check.
 - Cross-platform regression: Git autocrlf normalized hashed CSV/JSON assets in the first commit. Added .gitattributes to preserve byte-exact models/data; scripts/verify_git_assets.py checks committed blobs rather than only the working tree.

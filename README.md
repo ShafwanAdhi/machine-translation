@@ -91,6 +91,9 @@ npm test
 npm run build
 cd ..
 docker compose config --quiet
+python scripts/verify_git_assets.py
 ```
 
 Tes model membandingkan lima input per model dengan prediksi notebook. Benchmark bersumber dari ekspor model dan hasil `Machine_Translation_Group2.ipynb`; checksum sumber dicatat di `data/provenance.json`.
+
+Status pengujian dan batas verifikasi container: [docs/verification.md](docs/verification.md).
